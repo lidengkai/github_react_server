@@ -1,0 +1,74 @@
+// config
+
+// 全局
+@theme: #1890ff;
+@theme-hover: #40a9ff;
+@background-color: #f0f2f5;
+
+@black-color: rgba(0, 0, 0, .65);
+@white-color: rgba(255, 255, 255, .65);
+@border-color: #d9d9d9;
+@error-color: #f5222d;
+@disabled-color: #adadad;
+
+@screen-xs: 0px;
+@screen-sm: 576px;
+@screen-md: 768px;
+@screen-lg: 992px;
+@screen-xl: 1200px;
+@screen-xxl: 1600px;
+
+@font-family: PingFangSC-Regular,
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  "Microsoft Yahei",
+  "Hiragino Sans GB",
+  "WenQuanYi Micro Hei",
+  sans-serif !important;
+
+.clearfix() {
+  &::after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+.ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis(@line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+}
+
+.transform-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.margin-center() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.font-family() {
+  font-family: @font-family;
+}
+
+.font-family(@font) {
+  font-family: @font, @font-family;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "github_react_server",
+  "version": "0.1.0",
+  "author": "lidengkai <lidengkai9487@163.com>",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon bin/www",
+    "dev": "pm2 delete pm2.dev.json && pm2 start pm2.dev.json",
+    "test": "pm2 delete pm2.test.json && pm2 start pm2.test.json",
+    "prod": "pm2 delete pm2.prod.json && pm2 start pm2.prod.json",
+    "dev-stop": "pm2 delete pm2.dev.json",
+    "test-stop": "pm2 delete pm2.test.json",
+    "prod-stop": "pm2 delete pm2.prod.json",
+    "env-dev": "./node_modules/.bin/cross-env NODE_ENV=development bin/www",
+    "env-test": "./node_modules/.bin/cross-env NODE_ENV=testing bin/www",
+    "env-prod": "./node_modules/.bin/cross-env NODE_ENV=production bin/www"
+  },
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-logger": "^3.2.0",
+    "koa-nunjucks-2": "^3.0.2",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^1.18.4"
+  }
+}

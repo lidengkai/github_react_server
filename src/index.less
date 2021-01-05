@@ -1,0 +1,85 @@
+@import "./config.less";
+
+:global(#app) {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .font-family;
+  font-size: 14px;
+  background-color: @background-color;
+  color: @black-color;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &:link {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  background-color: transparent;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-user-drag: none;
+  -moz-window-dragging: no-drag;
+}
+
+canvas {
+  display: block;
+}
+
+:focus {
+  outline: none;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}

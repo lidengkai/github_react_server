@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "github_react_server",
+      "cwd": "./",
+      "script": "npm",
+      "args": "run env-test",
+      "log_file": "./logs/app.log",
+      "out_file": "./logs/output.log",
+      "error_file": "./logs/error.log",
+      "pid_file": "./logs/pid.pid",
+      "watch": [
+        "bin",
+        "config",
+        "dist",
+        "route",
+        "utils",
+        "app.js"
+      ],
+      "exec_interpreter": "node"
+    }
+  ]
+}
