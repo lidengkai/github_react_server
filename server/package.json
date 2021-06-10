@@ -4,6 +4,7 @@
   "author": "lidengkai <lidengkai9487@163.com>",
   "private": true,
   "scripts": {
+    "modules:sh": "ln -s -F ../../node_modules ./node_modules",
     "start": "./node_modules/.bin/nodemon bin/www",
     "dev": "pm2 delete pm2.dev.json && pm2 start pm2.dev.json",
     "test": "pm2 delete pm2.test.json && pm2 start pm2.test.json",

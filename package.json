@@ -4,6 +4,7 @@
   "author": "lidengkai <lidengkai9487@163.com>",
   "private": true,
   "scripts": {
+    "modules:sh": "ln -s -F ../node_modules ./node_modules",
     "start": "npm run dev",
     "mock": "npm run dev --mock",
     "dev": "webpack --watch --config build/server.js",
